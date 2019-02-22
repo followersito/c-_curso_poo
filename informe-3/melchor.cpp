@@ -1,4 +1,3 @@
-
 #include "melchor.h"
 /**
  * Declaracion de metodos de la clase Hombre
@@ -28,3 +27,28 @@ int Mujer::getEdad(){
     return this->edad;
 }
 Mujer::Mujer(){}
+
+/**Declaracion de metodos de la clase Restaurante
+ */
+Restaurante::Restaurante(){}        //Constructor
+
+void Restaurante::setNombre(std::string){
+    this->nombre=nombre;
+}
+std::string Restaurante::getNombre(){
+    return this->nombre;
+}
+
+void Restaurante::setDireccion(std::string){
+    this->direccion=direccion;
+}
+std::string Restaurante::getDireccion(){
+    return this->direccion;
+}
+
+void Restaurante::setHorario(std::string){
+    this->horario=horario;
+}
+std::string Restaurante::getHorario(){
+    return this->horario;
+}

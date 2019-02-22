@@ -4,6 +4,9 @@
 #include<iostream>
 #include<string>
 
+/**
+ Declaración de la clase Hombre
+ */
 struct Hombre
 {
 private:
@@ -14,6 +17,9 @@ public:
     std::string getNombre();
 };
 
+/** 
+ *Declaración de la clase Mujer
+ */
 struct Mujer
 {
 private:
@@ -25,6 +31,22 @@ public:
     std::string getNombre();
     void setEdad(int);
     int getEdad();
+};
+
+/**
+ Declaración de la clase Restaurante
+ */
+struct Restaurante{
+private: 
+    std::string nombre, direccion, horario;
+public:
+    Restaurante();
+    void setNombre(std::string);
+    std::string getNombre();
+    void setDireccion(std::string);
+    std::string getDireccion();
+    void setHorario(std::string);
+    std::string getHorario();
 };
 #endif /* MELCHOR_H */
 
