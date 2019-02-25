@@ -38,7 +38,9 @@ public:
  */
 struct Restaurante{
 private: 
-    std::string nombre, direccion, horario;
+    std::string nombre;
+    std::string direccion; 
+    std::string horario;
 public:
     Restaurante();
     void setNombre(std::string);
@@ -49,4 +51,3 @@ public:
     std::string getHorario();
 };
 #endif /* MELCHOR_H */
-
