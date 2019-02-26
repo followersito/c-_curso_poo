@@ -12,8 +12,9 @@ int main(int argc, char** argv) {
     cout<<"El nombre del hombre es: "<<h.getNombre()<<endl;
     m.setNombre("Maria");
     m.setEdad(25);
-    r.setNombre("Pizza");
-    r.setDireccion("Zona 9 6-15");
+    cout<<"El nombre de la mujer es: "<<m.getNombre()<<" y tiene "<<m.getEdad()<<" años"<<endl;
+    r.setNombre("Pizza pizza");
+    r.setDireccion("9-15 Zona 9");
     r.setHorario("9:00-22:00");
     cout<<"El restaurante "<<r.getNombre()<<" ubicado en: "<<r.getDireccion()<<" está abierto de: "<<r.getHorario()<<endl;
     cout<<"Ingrese el nombre de un estudiante: "<<endl;
@@ -28,3 +29,4 @@ int main(int argc, char** argv) {
     
     return 0;
 }
+
