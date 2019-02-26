@@ -34,11 +34,36 @@ public:
 };
 
 /**
+ Declaración de la clase Estudiante
+ */
+struct Estudiante
+{
+private:
+    std::string nombre;
+    std::string carnet;
+    int nota;
+public:
+    Estudiante();                   //Constructor vacío
+    Estudiante(std::string);        //Constructor 1
+    Estudiante(int);                //Constructor 2 
+    Estudiante(std::string,int);    //Constructor 3
+    void setNombre(std::string);
+    std::string getNombre();
+    void setNota(int);
+    int getNota();
+    void setCarnet(std::string);
+    std::string getCarnet();
+};
+
+
+/**
  Declaración de la clase Restaurante
  */
 struct Restaurante{
 private: 
-    std::string nombre, direccion, horario;
+    std::string nombre;
+    std::string direccion; 
+    std::string horario;
 public:
     Restaurante();
     void setNombre(std::string);
@@ -49,4 +74,3 @@ public:
     std::string getHorario();
 };
 #endif /* MELCHOR_H */
-
