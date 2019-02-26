@@ -1,34 +1,35 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package melchor;
 
 /**
- *
- * @author Ingetelca
+ * Clase Restaurante
+ * @author Ivan
  */
 public class Restaurante {
     private String nombre;
     private String horario;
     private String direccion;
-    public Restaurante(){}
+    public Restaurante(){}      //Constructor
+    //Setter de nombre
     public void setNombre(String nombre){
         this.nombre=nombre;
     }
+    //Getter de nombre
     public String getNombre(){
         return this.nombre;
     }
+    //Setter de horario
     public void setHorario(String horario){
         this.horario=horario;
     }
+    //Getter de horario
     public String getHorario(){
         return this.horario;
     }
+    //Setter de direccion
     public void setDireccion(String direccion){
         this.direccion=direccion;
     }
+    //Getter de direccion
     public String getDireccion(){
         return this.direccion;
     }
