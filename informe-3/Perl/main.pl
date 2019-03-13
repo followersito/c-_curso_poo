@@ -1,5 +1,4 @@
 #!/usr/bin/perl
-
 use Mujer;
 $m=Mujer->new();
 $m->setNombre("Ivan");
