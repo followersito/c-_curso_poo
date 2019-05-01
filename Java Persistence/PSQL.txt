@@ -1,0 +1,39 @@
+Crear base de datos
+CREATE DATABASE nombre_db WITH OWNER nombre_usuario;
+CREATE USER nombre_usuario WITH password '123456';
+
+Database owner:
+ALTER DATABASE database_name OWNER TO new_owner;
+
+Create superuser:
+ALTER USER mysuper WITH SUPERUSER;
+
+Create table:		
+create table usuarios (
+  nombre varchar(30),
+  clave varchar(10)
+ );
+-----------------------
+Ejemplo:
+-----------------------
+CREATE TABLE po_headers (
+ po_no INTEGER PRIMARY KEY,
+ vendor_no INTEGER,
+ description TEXT,
+ shipping_address TEXT
+);
+--------------------------------------------------
+In case the primary key consists of two or more 
+columns, you define the primary key constraint as 
+follows:
+--------------------------------------------------
+CREATE TABLE TABLE (
+ column_1 data_type,
+ column_2 data_type,
+ … 
+        PRIMARY KEY (column_1, column_2)
+);
+
+
+ALTER TABLE products 
+ADD PRIMARY KEY (product_no);
