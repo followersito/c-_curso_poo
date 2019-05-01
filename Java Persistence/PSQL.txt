@@ -1,29 +1,26 @@
 -------------------------
 Crear base de datos
--------------------------
 CREATE USER nombre_usuario WITH password '123456';
 CREATE DATABASE nombre_db WITH OWNER nombre_usuario;
 
 ------------------------
 Set Database owner
------------------------
 ALTER DATABASE database_name OWNER TO new_owner;
 
 -----------------------
 Create superuser:
------------------------
 ALTER USER mysuper WITH SUPERUSER;
-
+-----------------------
+Create schema:
+CREATE SCHEMA myschema;
 -----------------------
 Create table:		
------------------------
 create table usuarios (
   nombre varchar(30),
   clave varchar(10)
  );
 -----------------------
-Ejemplo con PRIMARY KEY
------------------------
+Ejemplo con PRIMARY KEY:
 CREATE TABLE po_headers (
  po_no INTEGER PRIMARY KEY,
  vendor_no INTEGER,
@@ -39,17 +36,14 @@ follows:
 CREATE TABLE TABLE (
  column_1 data_type,
  column_2 data_type,
- … 
         PRIMARY KEY (column_1, column_2)
 );
 
-
 ALTER TABLE products 
 ADD PRIMARY KEY (product_no);
-
 ---------------------------
 FOREIGN KEY a la Tabla
----------------------------
+
 CREATE TABLE so_items (
   item_id INTEGER NOT NULL, 
   so_id INTEGER REFERENCES po_headers(po_no),
@@ -68,3 +62,4 @@ CREATE TABLE so_items (
  PRIMARY KEY (item_id, so_id),
  FOREIGN KEY (so_id) REFERENCES so_headers (id)
 );
+----------------------
